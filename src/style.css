@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: cadetblue;
+}
+
+#titlePage {
+  text-align: center;
+}
+
+#ageText {
+  margin-top: -100px;
+  margin: 40px;
+}
+#nameText {
+  margin-top: -100px;
+  margin: 40px;
+}
+#weightText {
+  margin-top: -100px;
+  margin: 40px;
+}
+#heightText {
+  margin-top: -100px;
+  margin: 40px;
+}
+
+.name {
+  margin-left: 500px;
+  margin-bottom: 100px;
+}
+
+.calculateBtn {
+  margin: 290px;
+  margin-top: 20px;
+  height: 25px;
+  border-style: solid;
+  border-color: goldenrod;
+  background-color: goldenrod;
+  cursor: pointer;
+}
+
+
+
