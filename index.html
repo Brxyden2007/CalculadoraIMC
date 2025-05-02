@@ -1,30 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="/src/main.js"></script>
-    <link rel="stylesheet" href="/src/style.css">
-    <title>IMC - Web Page</title>
-  </head>
-  <body>
-    <h1 id="titlePage">Calculadora IMC</h1>
-    <div class="ageNamee">
-      <label for="edadText">EDAD</label>
-      <input type="text" placeholder="Edad..." id="ageText"></textarea>
-      <label for="nameText">NOMBRE</label>
-      <input type="text" placeholder="Nombre" id="nameText"></textarea>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1><strong>Calculadora de IMC</strong></h1>
+        <div class="grid-container">
+            <div class="action-buttons">
+                <button id="btnNuevo">Nuevo</button>
+                <button id="btnGuardar" disabled>Guardar</button>
+                <button id="btnBorrar">Borrar</button>
+                <button id="btnMostrar">Mostrar</button>
+            </div>
+            <input type="text" id="nombre" placeholder="Nombre" disabled> <!-- Se usa disabled para deshabilitar la funcion hasta que se de al boton "Nuevo"-->
+            <input type="number" id="edad" placeholder="Edad" disabled>
+            <input type="number" id="peso" placeholder="Peso (kg)" disabled>
+            <input type="number" id="altura" placeholder="Altura (cm)" disabled>
+            <button id="btnCalcular" disabled>Calcular IMC</button>
+            <div id="resultado"></div>
+            <div id="listadoUsuarios" class="listado-usuarios"></div>
+        </div>
     </div>
-    <div class="weight-height">
-      <label for="weightText">PESO</label>
-      <input type="text" placeholder="Peso..." id="weightText"></textarea>
-      <label for="heightText">ESTATURA</label>
-      <input type="text" placeholder="Estatura..." id="heightText"></textarea>
-    </div>
-    <div>
-      <button class="calculateBtn">CALCULAR</button>
-    </div>
-    <p class="totalIMC">Total IMC: </p>
-  </body>
+    <script src="src/main.js"></script>
+</body>
 </html>
